@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Volume Transition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Geometria:wght@300&display=swap" rel="stylesheet"> <!-- Importing the fonts -->
+    <style>
+        body {
+            width: 240px;  /* Made the box smaller */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #000;  
+            padding: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 20px;  /* Adjusted font size */
+            font-family: 'Cardo', serif;  /* Set Cardo regular font */
+            margin-bottom: 6px;
+            color: #FFF;
+        }
+        h2 {
+            font-size: 12px;  /* Adjusted font size */
+            font-family: 'Geometria', sans-serif;  /* Set Geometria Narrow font */
+            margin-bottom: 15px;
+            color: #FFF;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;  /* Adjusted width */
+            height: 25px;  /* Adjusted height */
+        }
+        .switch input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #888;  /* Dark gray color */
+            transition: .4s;
+            border-radius: 12.5px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 19px;  /* Adjusted size */
+            width: 19px;  /* Adjusted size */
+            left: 3px;
+            bottom: 3px;
+            background-color: #CCC;  /* Light gray color */
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #CCC;  /* Light gray color */
+        }
+        input:checked + .slider:before {
+            transform: translateX(25px);
+            background-color: #888;  /* Dark gray color */
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Volume Transition</h1>
+    <h2>SWITCH SONGS SMOOTHLY!</h2>
+    <label class="switch">
+        <input type="checkbox" id="toggleBtn">
+        <span class="slider"></span>
+    </label>
+    <script src="popup.js"></script>
+</body>
+</html>

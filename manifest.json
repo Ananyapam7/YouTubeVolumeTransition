@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Volume Transition",
+    "author": "Ananyapam De",
+    "version": "1.0",
+    "description": "Gradually adjust volume when transitioning between YouTube videos.",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "content_scripts": [{
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.ico",
+        "48": "images/icon48.ico",
+        "128": "images/icon128.ico"
+      }
+    }
+  }
+  
