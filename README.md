@@ -2,7 +2,7 @@
 
 Hey there, groovy human! 🕺 Ever been vibing to some smooth tunes on YouTube, and then - *BOOM* - your pal sneakily switches to a new track, and the volume blasts your eardrums? Say goodbye to those not-so-mellow vibes! Immerse yourself in the gentle embrace of **YouTube Volume Transition**. 
 
-![HEAD IMAGE](images/readme_head.png)
+![HEAD IMAGE](images/readme_img.png)
 
 ## How Does It Work? 🎩✨
 Imagine you're jamming to some lo-fi beats and then your over-eager buddy jumps in to play the latest viral sensation. Instead of assaulting your eardrums, this nifty extension takes the edge off, gently easing the volume down. It's like having a well-mannered volume butler at your beck and call.
